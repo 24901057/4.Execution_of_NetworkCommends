@@ -58,9 +58,20 @@ while True:
     except KeyError:
         c.send("Not Found".encode())
 ```
+
 ## output:
 <img width="1310" height="288" alt="image" src="https://github.com/user-attachments/assets/d20d47e2-5972-4f49-96f9-fa602710877b" />
 
+## traceroute command:
+```python
+from scapy.all import *
+target = ["www.google.com"]
+result, unans = traceroute(target,maxttl=32)
+print(result,unans)
+```
+## output:
+
+<img width="953" height="515" alt="Screenshot 2025-11-11 193550" src="https://github.com/user-attachments/assets/4d354271-08af-4bb7-b5f3-0b0258845a01" />
 
 ## commands and output:
 netstat
